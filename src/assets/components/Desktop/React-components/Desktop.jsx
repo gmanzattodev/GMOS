@@ -85,7 +85,7 @@ export default function Desktop() {
 
 
         
-
+        
         {opensApp === "Calculadora" ? <Calculadora setOpenApp={setOpenApp} /> : ""}
         {opensApp === "Files" ? <Gerenciador setOpenApp={setOpenApp}/> : ""}
         {opensApp === "Browser" ? <Home setOpenApp={setOpenApp} internet={internet}/> : ""}
