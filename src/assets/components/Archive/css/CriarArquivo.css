@@ -1,0 +1,92 @@
+.Criararquivos{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.criar-arq{
+    padding: 20px;
+    border: 1px solid #ffffff48;
+    border-radius: 10px;
+    text-align: center;
+}
+.criar-arq i{
+    border: 1px solid #ffffff48;
+    background: linear-gradient(45deg, rgb(43, 43, 43), rgb(19, 19, 19));
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 40px;
+    color: #0000ff;
+}
+.criar-arq h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.criar-arq input{
+    padding: 5px 20px;
+    border: 1px solid #ffffff48;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+    outline: none;
+}
+.btn-arquivo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-arquivo button{
+    padding: 5px 26px;
+    border: 1px solid #ffffff48;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn-arquivo button:hover{
+    background-color: rgb(24, 24, 24);
+}
+.btn-arquivo .salvar{
+    background-color: #0000ff;
+    border: none;
+}
+.btn-arquivo .salvar:hover{
+    background-color: #0000b8;
+}
+.arquivos-criado{
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    border: 1px solid #ffffff48;
+    border-radius: 10px;
+    width: 70%;
+    gap: 10px;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    height: 60%;
+    overflow: auto;
+}
+.arquivos-criado .card-arquivo{
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ffffff48;
+    cursor: pointer;
+}
+.card-arquivo i{
+    font-size: 20px;
+}
+.card-arquivo p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 11px;
+    padding-top: 10px;
+}

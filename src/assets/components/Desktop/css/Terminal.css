@@ -1,0 +1,95 @@
+.terminal{
+    width: 40%;
+    height: 24rem;
+    border: 2px solid #ffffff48;
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 15px;
+    margin-left: 10px;
+    z-index: 99;
+}
+.menu-terminal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid rgb(48, 48, 48);
+}
+.menu-terminal p{
+    color: rgb(204, 204, 204);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: rgb(48, 48, 48);
+    margin-top: 4px;
+    margin-left: 4px;
+    border-radius: 10px 5px 0px 0px;
+}
+.terminal .btn{
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+.terminal .btn button{
+    padding: 10px;
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.terminal .btn button:hover{
+    background-color: rgba(128, 128, 128, 0.363);
+}
+.terminal .btn .close:hover{
+    background-color: red;
+}
+.tela-terminal{
+    background-color: #00000025;
+    backdrop-filter: blur(20px);
+    flex: 1;
+    height: 87.3%;
+    border-radius: 0px 0px 13px 13px;
+    padding: 10px;
+    overflow:auto;
+}
+.tela-terminal::-webkit-scrollbar{
+    width: 8px;
+}
+.tela-terminal::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 4px;
+    border: 1px solid #ffffff48;
+    border-right: transparent;
+
+}
+.maximed{
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+}
+.hidden {
+    display: none;
+}
+.tela-terminal .text{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.text  .marcar-terminal{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: rgb(196, 196, 196);
+}
+.text input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.tela-terminal .historico{
+    color: #ffffff;
+    white-space: pre-line;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}

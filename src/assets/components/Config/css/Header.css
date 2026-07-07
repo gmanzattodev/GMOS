@@ -1,0 +1,46 @@
+.Header-settings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.Header-settings i{
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 50%;
+    border: 1px solid #ffffff1f;
+    cursor: pointer;
+}
+.Header-settings .section-titulo{
+    display: flex;
+}
+.Header-settings img{
+    width: 50px;
+    box-shadow: 0 0 10px #ffffff1f;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.Header-settings .titulo{
+    align-items: start;
+    line-height: 4px;
+    display: flex;
+    flex-direction: column;
+
+}
+.Header-settings h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.Header-settings p{
+    color: #b3b3b3;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.Header-settings .icon{
+    display: flex;
+    gap: 20px;
+}

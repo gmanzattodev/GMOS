@@ -1,0 +1,115 @@
+.login{
+    background: url("../../../img/fundologin.png") center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card-perfil{
+    background-color: #00000088;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #ffffff48;
+    overflow: hidden;
+}
+.login .fundoimage{
+    left: 34.3rem;
+    width:425px;
+    border-radius: 50%;
+    top: 79px;
+    position: absolute;
+    filter: grayscale(100%);
+    transition: filter 1s;
+}
+
+.login .fundoimage:hover{
+    filter: grayscale(0);
+}
+.img{
+    margin-bottom: 30px;
+}
+.img img{
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #ffffff48;
+    cursor: pointer;
+}
+.input-boxs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff48;
+}
+.input-box i{
+    color: #fff;
+    cursor: pointer;
+}
+.input-box p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input-box .input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.card-perfil button{
+    background-color: rgb(49, 49, 49);
+    padding: 10px 30px;
+    border: 1px solid #ffffff48;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}   
+.card-perfil button:hover{
+    background-color: rgb(24, 24, 24);
+
+}
+.card-mensagem{
+    position: fixed;
+    top: 70%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.466);
+    border: 1px solid #ffffff48;
+    backdrop-filter: blur(8px);
+    animation: aparecer .3s ease;
+    border-radius: 10PX;
+    overflow: hidden;
+}
+@keyframes aparecer {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}

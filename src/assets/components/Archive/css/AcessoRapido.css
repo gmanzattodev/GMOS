@@ -1,0 +1,42 @@
+.acessoRapido{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.acessoRapido h2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+.cards-rapido{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+    margin: 20px;
+}
+.card-acesso{
+    background: linear-gradient(35deg, rgb(17, 17, 17), rgb(27, 27, 27));
+    padding: 10px;
+    width: 8rem;
+    height: 6rem;
+    border: 1px solid #ffffff48;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.card-acesso i{
+    font-size: 30px;
+    filter: drop-shadow(0 0 0px white);
+
+}
+.card-acesso h2{
+    padding-top: 4px;
+    font-size: 13px;
+}
+.card-acesso p{
+    position: absolute;
+    bottom: 5px;
+    color: #7c7c7c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}

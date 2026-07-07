@@ -1,0 +1,33 @@
+.Dock{
+    width: 10%;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    z-index: 9;
+}
+.Dock p{
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    background-color: black;
+    padding: 5px 10px;
+    border: 1px solid #ffffff48;
+    border-radius: 5px;
+}
+.Dock img{
+    width: 30px;
+    border-radius: 50%;
+}
+.Dock-app{
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}

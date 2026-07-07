@@ -1,0 +1,74 @@
+.inicio{
+    width: 100%;
+    height: 100%;
+}
+
+.arquivos{
+    width: 95%;
+    height: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, rgba(20, 20, 20, 0.637) 20%, transparent);
+}
+.info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+}
+.info i{
+    background: linear-gradient(35deg, rgb(20, 20, 20), rgb(29, 29, 29));
+    padding: 10px;
+    border: 1px solid #ffffff48;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+.info .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    line-height: 10px;
+}
+.info .titulo p{
+    color: rgb(145, 145, 145);
+    font-size: 12px;
+}
+.cards-arquivos{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 10px;
+}
+.nova{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(24, 24, 24);
+    border: 1px solid #ffffff48;
+    border-radius: 10px;
+}
+.nova-info{
+    line-height: 15px;
+}
+.nova i{
+    font-size: 22px;
+}
+.nova h4{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600
+}
+.nova p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: rgb(85, 85, 85);
+}

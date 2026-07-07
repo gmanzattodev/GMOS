@@ -1,0 +1,26 @@
+.Gerenciador{
+    background-color: rgba(0, 0, 0, 0.486);
+    backdrop-filter: blur(8px);
+    width: 60%;
+    height: 40rem;
+    border: 2px solid #ffffff48;
+    margin-left: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.topbar-gerenciador{
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+}
+.geral{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px);
+}
+.maximizar{
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+}

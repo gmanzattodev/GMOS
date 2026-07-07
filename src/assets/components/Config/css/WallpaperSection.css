@@ -1,0 +1,95 @@
+.Wallpaper-settings, .Dock-settings{
+    background-color: rgb(17, 17, 17);
+    margin-top: 30px;
+    height: 15rem;
+    border-radius: 10px;
+    padding: 10px;
+}
+.Wallpaper-settings .info-wall, .Dock-settings .info-dock{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Wallpaper-settings .info-wall i, .Dock-settings .info-dock i{
+    color: #fff;
+    padding: 7px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20%;
+    font-size: 12px;
+}
+.Wallpaper-settings .titulo, .Dock-settings .titulo{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: start;
+    font-size: 10px;
+    line-height: 7px;
+}
+.Wallpaper-settings .titulo h3, .Dock-settings .titulo h3{
+    font-weight: 200;
+}
+.Wallpaper-settings .titulo p, .Dock-settings .titulo p{
+    color: #b3b3b3;
+}
+.Wallpaper-settings .secao-galeria, .Dock-settings .dock-galeria{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.Wallpaper-settings .container-galeria{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    height: calc(100% - 50px);
+}
+.secao-galeria::-webkit-scrollbar{
+    display: none;
+}
+
+.Wallpaper-settings .container-galeria i{
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.Wallpaper-settings .imagens{
+    display: flex;
+    position: relative;
+
+}
+.Wallpaper-settings .imagens i{
+    top: 5px;
+    right: 5px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    font-size: 14px;
+    position: absolute;
+}
+.Wallpaper-settings .imagens img{
+    width: 200px;
+    cursor: pointer;
+}
+.border{
+    border: 2px solid #fff;
+}
+.dock-galeria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.icones{
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.icones img{
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.TopRecentes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 20px);
+    height: 80px;
+    background: linear-gradient(90deg, rgb(29, 29, 29), transparent 80%);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    flex-shrink: 0;
+}
+.TopRecentes .bar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.TopRecentes .bar i{
+    background: linear-gradient(35deg, rgb(24, 24, 24), rgb(56, 56, 56));
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ffffff48;
+    color: #fff;
+    font-size: 30px;
+}
+.TopRecentes .bar .titulo-top{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+}
+.titulo-top h3{
+    font-size: 17px;
+}
+.titulo-top p{
+    font-size: 12px;
+    color: gray;
+}
+.Historio-limpo{
+    padding-right: 20px;
+}
+.Historio-limpo button{
+    padding: 10px;
+    font-size: 20px;
+    background: linear-gradient(35deg, rgb(24, 24, 24), rgb(56, 56, 56));
+    border-radius: 5px;
+    border: 1px solid #ffffff48;
+    color: #fff;
+    cursor: pointer;
+}
