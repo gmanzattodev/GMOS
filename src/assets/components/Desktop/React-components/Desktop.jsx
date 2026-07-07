@@ -28,7 +28,7 @@ export default function Desktop() {
   const [mudarImagem, setMudarImagem] = useState(imagens[0].img)
   const [MudarDock, setMudarDock] = useState(1)
 
-  
+
  useLayoutEffect(() => {
     const tl = gsap.timeline()
     .fromTo(TitiloRef.current, {

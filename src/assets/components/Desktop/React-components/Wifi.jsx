@@ -11,6 +11,7 @@ export default function Wifi({ setInternet, setAbrirWifi }){
             setTimeout(() => {
                 setTexto("Conectado")
                 setInternet(true)
+                
             }, 4000);
         }, 100);
 
