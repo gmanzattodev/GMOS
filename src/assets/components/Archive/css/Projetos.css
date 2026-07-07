@@ -1,0 +1,20 @@
+.secao-projetos{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+.projetos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.projetos .card{
+    height: auto;
+    width: 200px;
+    z-index: 2;
+    position: relative;
+    border: 1px solid #ffffff48;
+    border-radius: 10px;
+    color: #ffffff;
+}

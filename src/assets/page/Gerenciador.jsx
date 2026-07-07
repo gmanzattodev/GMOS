@@ -5,6 +5,7 @@ import Recente from "../components/Archive/React-components/Recente";
 import "./css/Gerenciador.css";
 import Inicio from "../components/Archive/React-components/Inicio";
 import Favoritos from "../components/Archive/React-components/Favoritos";
+import Projetos from "../components/Archive/React-components/Projetos";
 
 export default function Gerenciador({ setOpenApp }) {
   const [ativo, setAtivo] = useState(1);
@@ -146,6 +147,7 @@ export default function Gerenciador({ setOpenApp }) {
         removerFavorito={removerFavorito}
       />
     ),
+    4: <Projetos />
   };
   
 
