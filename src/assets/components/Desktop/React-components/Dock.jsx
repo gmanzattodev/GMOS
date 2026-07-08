@@ -4,7 +4,7 @@ import { useLayoutEffect, useState } from "react";
 import gsap from "gsap";
 import { temas } from "../../Config/WallPeper"
 
-export default function Dock({ setOpenApp, Dockref, MudarDock }) {
+export default function Dock({ openApp, Dockref, MudarDock }) {
   const [passMouse, setPassMouse] = useState(null);
   
   
@@ -15,7 +15,7 @@ export default function Dock({ setOpenApp, Dockref, MudarDock }) {
     <>
       <section className="Dock" ref={Dockref}>
         {temas[MudarDock].map((app) => (
-          <div className="Dock-app" key={app.id} onClick={() => setOpenApp((prev) => (prev === app.nome ? null : app.nome))} onMouseMove={() => { setPassMouse(app.id); }} onMouseLeave={() => setPassMouse(false)}>
+          <div className="Dock-app" key={app.id} onClick={() => openApp(app.nome)} onMouseMove={() => { setPassMouse(app.id); }} onMouseLeave={() => setPassMouse(false)}>
             <img src={app.img} alt={app.nome} />
             {passMouse === app.id && <p>{app.nome}</p>}
           </div>

@@ -1,16 +1,16 @@
 import { useState } from "react";
 import "../css/Menu.css";
-export default function Menu({ setAbrirMenu, setOpenApp, opensApp }) {
+export default function Menu({ setAbrirMenu, openApp }) {
   const [input, setInput] = useState("");
 
   const aplicativos = [
     {
-      nome: "Arquivos",
+      nome: "Files",
       icone: "ri-folder-line",
       app: "Files",
     },
     {
-      nome: "Navegador",
+      nome: "Browser",
       icone: "ri-global-line",
       app: "Browser",
     },
@@ -48,7 +48,7 @@ export default function Menu({ setAbrirMenu, setOpenApp, opensApp }) {
             <div className="apps">
                 <div className="cards-menu">
                   {aplicativos.filter((item) => item.nome.toLowerCase().includes(input.toLowerCase()),).map((item) => (
-                      <div key={item.nome} className="card-menu" onClick={() => {setOpenApp(item.app); setAbrirMenu(false); }} >
+                      <div key={item.nome} className="card-menu" onClick={() => {openApp(item.nome); setAbrirMenu(false); }} >
                         <i className={item.icone}></i>
                         <p>{item.nome}</p>
                       </div>

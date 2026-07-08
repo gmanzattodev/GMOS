@@ -6,7 +6,7 @@ import Error from "../components/Browser/React-components/Error";
 import { useState, useRef } from "react";
 import "./css/Home.css";
 
-export default function Home({ setOpenApp, internet }) {
+export default function Home({ id, closeApp, internet }) {
   const [maximizar, setMaximizar] = useState(false);
   const minimeRef = useRef(null);
   const [telaAtiva, setTelaAtiva] = useState(null);
@@ -45,7 +45,8 @@ export default function Home({ setOpenApp, internet }) {
   }
 
   const propsHeader = {
-    setOpenApp,
+    id,
+    closeApp,
     maximizar,
     setMaximizar,
     minimeRef,

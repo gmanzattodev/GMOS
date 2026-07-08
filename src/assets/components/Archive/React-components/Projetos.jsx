@@ -14,7 +14,7 @@ export default function Projetos(){
                             <img src={projeto.img} alt={projeto.name} />
                             <div className="info-card">
                                 <h3>{projeto.name}</h3>
-                                <p>{projeto.status}</p>
+                                <p className="status">{projeto.status}</p>
                                 <p>{projeto.tecnologias}</p>
                                 <button>{projeto.botao}</button>
                             </div>

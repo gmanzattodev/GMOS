@@ -7,12 +7,12 @@ import "./css/Configuracao.css"
 import { useState } from "react"
 
 
-export default function Configuracao({ setOpenApp, setMudarImagem, setMudarDock }){
+export default function Configuracao({ setMudarImagem, setMudarDock, closeApp, id }){
     const [menu, setMenu] = useState(false)
     return (
         <>
             <section className="settings">
-                <Header setMenu={setMenu} setOpenApp={setOpenApp}/>
+                <Header setMenu={setMenu} closeApp={closeApp} id={id} />
                 <div className="scroll">
                     <WallpaperSection setMudarImagem={setMudarImagem}/>
                     <DockSection setMudarDock={setMudarDock} />

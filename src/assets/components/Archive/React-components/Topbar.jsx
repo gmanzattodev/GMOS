@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../css/Topbar.css'
-export default function Topbar({ setOpenApp, setMaximized, maximized }){
+export default function Topbar({ closeApp, id, setMaximized, maximized }){
     
     
     
@@ -13,9 +13,9 @@ export default function Topbar({ setOpenApp, setMaximized, maximized }){
                         <p>Arquivos</p>
                     </div>
                     <div className="fechamento">
-                        <button><i className="ri-subtract-line" onClick={() => setOpenApp(false)}></i></button>
+                        <button><i className="ri-subtract-line" onClick={() => setOpenApp((prev) => prev.filter(app => app !== "Gerenciador"))}></i></button>
                         <button onClick={() => setMaximized(!maximized)}><i className={maximized ? "ri-checkbox-multiple-blank-line" : "ri-square-line"}></i></button>
-                        <button className='close' onClick={() => setOpenApp(false)}><i className="ri-close-line"></i></button>
+                        <button className='close' onClick={() => closeApp(id)}><i className="ri-close-line"></i></button>
                     </div>
                 </div>
                 <div className="barra">

@@ -2,7 +2,7 @@ import '../css/Header.css'
 import perfilBrowser from '../../../img/perfilBrowser.jpeg'
 import { useRef, useState } from 'react';
 import gsap from 'gsap';
-export default function header({ setOpenApp, maximizar, setMaximizar, minimeRef, setTelaAtiva, telaAtiva, input, setInput, executarComando }) {
+export default function header({ id, closeApp, maximizar, setMaximizar, minimeRef, setTelaAtiva, telaAtiva, input, setInput, executarComando }) {
   const [minimizar, setMinimizar] = useState(false)
   
 
@@ -39,7 +39,7 @@ export default function header({ setOpenApp, maximizar, setMaximizar, minimeRef,
               <button onClick={() => setMaximizar(!maximizar)}>
                 <i className={maximizar ? "ri-checkbox-multiple-blank-line" : "ri-square-line"}></i>
               </button>
-              <button className='close' onClick={() => setOpenApp(false)}>
+              <button className='close' onClick={() => closeApp(id)}>
                 <i className="ri-close-line"></i>
               </button>
           </div>

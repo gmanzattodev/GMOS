@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./css/Calculadora.css";
 
-export default function Calculadora({ setOpenApp }) {
+export default function Calculadora({ closeApp, id }) {
     const [valor, setValor] = useState("");
 
     function adicionar(numero) {
@@ -23,7 +23,7 @@ export default function Calculadora({ setOpenApp }) {
     return (
         <div className="calculadora">
             <div className="fechar">
-                <button onClick={() => setOpenApp(false)}>x</button>
+                <button onClick={() => closeApp(id)}>x</button>
             </div>
             <input
                 type="text"

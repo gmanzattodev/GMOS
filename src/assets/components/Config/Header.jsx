@@ -1,6 +1,6 @@
 import ImgHeader from '../../img/settingsHeader.png'
 import "./css/Header.css"
-export default function Header({ setMenu, setOpenApp }){
+export default function Header({ setMenu, closeApp, id }){
     return (
         <>
             <header className="Header-settings">
@@ -12,7 +12,7 @@ export default function Header({ setMenu, setOpenApp }){
                     </div>
                 </div>
                 <div className="icon">
-                    <i className="ri-close-line" onClick={() => setOpenApp(false)}></i>
+                    <i className="ri-close-line" onClick={() => closeApp(id)}></i>
                     <i className="ri-menu-line" onClick={() => setMenu(prev => !prev)}></i>
                 </div>
             </header>

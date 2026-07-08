@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import "../css/Terminal.css";
 import gsap from "gsap";
 
-export default function Terminal({ setOpenApp }) {
+export default function Terminal({ closeApp, id }) {
   const miniRef = useRef(null);
   const terminalEndRef = useRef();
   const [maxmizar, setMaxmizar] = useState(false);
@@ -136,7 +136,7 @@ Soft Skills
             >
               <i className={maxmizar ? "ri-checkbox-multiple-blank-line" : "ri-square-line"}></i>
             </button>
-            <button className="close" onClick={() => setOpenApp(false)}>
+            <button className="close" onClick={() => closeApp(id)}>
               <i className="ri-close-line"></i>
             </button>
           </div>

@@ -7,7 +7,7 @@ import Inicio from "../components/Archive/React-components/Inicio";
 import Favoritos from "../components/Archive/React-components/Favoritos";
 import Projetos from "../components/Archive/React-components/Projetos";
 
-export default function Gerenciador({ setOpenApp }) {
+export default function Gerenciador({ closeApp, id }) {
   const [ativo, setAtivo] = useState(1);
   const [maximized, setMaximized] = useState(false);
   const [input, setInput] = useState("");
@@ -156,7 +156,8 @@ export default function Gerenciador({ setOpenApp }) {
       <section className={maximized ? "Gerenciador maximizar" : "Gerenciador"}>
         <header className="topbar-gerenciador">
           <Topbar
-            setOpenApp={setOpenApp}
+            closeApp={closeApp}
+            id={id}
             setMaximized={setMaximized}
             maximized={maximized}
           />
