@@ -118,9 +118,7 @@ export default function Desktop() {
           />
         )}
 
-        {abrirWifi ? (
-          <Wifi setInternet={setInternet} setAbrirWifi={setAbrirWifi} />
-        ) : null}
+        {abrirWifi ? (<Wifi setInternet={setInternet} setAbrirWifi={setAbrirWifi} />) : null}
         <Cpu Gpu={Gpu} />
         <Dock openApp={openApp} Dockref={Dockref} MudarDock={MudarDock} />
 
