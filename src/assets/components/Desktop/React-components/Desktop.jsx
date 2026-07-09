@@ -20,6 +20,7 @@ export default function Desktop() {
   const [internet, setInternet] = useState(false);
   const [abrirWifi, setAbrirWifi] = useState(false);
   const [posicao, setPosicao] = useState({ x: 0, y: 0 });
+  const [moveSecao, setMoveSecao] = useState({ x: 0, y: 0})
   const TitiloRef = useRef();
   const Dockref = useRef();
   const Gpu = useRef();
@@ -71,6 +72,14 @@ export default function Desktop() {
         1,
       );
   }, []);
+
+
+  const Movebar = (e) => {
+    setMoveSecao({
+      x: e.clientX,
+      y: e.clientY
+    })
+  }
   function openApp(type) {
     setWindows((prev) => [
       ...prev,
@@ -126,7 +135,7 @@ export default function Desktop() {
           switch (window.type) {
             case "Terminal":
               return (
-                <Terminal key={window.id} id={window.id} closeApp={closeApp} />
+                <Terminal Movebar={Movebar} moveSecao={moveSecao} key={window.id} id={window.id} closeApp={closeApp} />
               );
 
             case "Browser":

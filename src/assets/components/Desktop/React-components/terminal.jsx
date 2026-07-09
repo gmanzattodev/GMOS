@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import "../css/Terminal.css";
 import gsap from "gsap";
 
-export default function Terminal({ closeApp, id }) {
+export default function Terminal({ closeApp, id, Movebar, moveSecao }) {
   const miniRef = useRef(null);
   const terminalEndRef = useRef();
   const [maxmizar, setMaxmizar] = useState(false);
@@ -123,7 +123,7 @@ Soft Skills
         className={`${maxmizar ? "terminal maximed" : "terminal"}`}
         ref={miniRef}
       >
-        <div className="menu-terminal">
+        <div className="menu-terminal" onMouseEnter={Movebar} style={{ x: moveSecao.x, y: moveSecao.y}}>
           <p>Terminal - GM OS</p>
 
           <div className="btn">
