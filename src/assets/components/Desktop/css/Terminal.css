@@ -1,6 +1,6 @@
 .terminal{
     width: 40%;
-    position: absolute;
+    position: relative;
     height: 24rem;
     border: 2px solid #ffffff48;
     background-color: rgba(0, 0, 0, 0.747);
