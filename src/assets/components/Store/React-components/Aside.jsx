@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Aside } from "../../../database/Asidesdash"
-
-export default function AsideMenu(){
+import "../css/Aside.css"
+export default function AsideMenu({ setOpenSecao, openSecao }){
 
     const [clickLogo, setClickLogo] = useState(false)
 
@@ -9,10 +9,9 @@ export default function AsideMenu(){
     return (
         <aside className={clickLogo ? "Active aside" : "aside"}>
             <i className={clickLogo  ? "ri-store-3-fill"  : "ri-contract-right-line"} onClick={() => setClickLogo(prev => !prev)}></i>
-
             <div className="cards-aside">
                 {Aside.map((event) => (
-                    <div className="card" key={event.id}>
+                    <div className={openSecao === event.id ? "card escolhido" : "card"} key={event.id} onClick={() => setOpenSecao(event.id)}>
                         <i className={ clickLogo  ? event.iconeFechamento : event.icone}></i>
                         <div className="info">
                             <p>{clickLogo && event.name}</p>

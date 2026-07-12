@@ -1,0 +1,11 @@
+.Dashboard{
+    width: 80%;
+    height: 50rem;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 1px solid #ffffff48;
+    background: #070d1ac9;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}

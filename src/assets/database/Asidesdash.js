@@ -1,7 +1,7 @@
 export const Aside = [
   {
     id: 1,
-    name: "Home",
+    name: "Dashboard",
     icone: "ri-home-5-line",
     iconeFechamento: "ri-home-5-fill",
   },

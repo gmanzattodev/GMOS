@@ -29,6 +29,11 @@ export default function Menu({ setAbrirMenu, openApp }) {
       icone: "ri-calculator-line",
       app: "Calculadora",
     },
+    {
+      nome: "E-commerce",
+      icone: "ri-store-3-fill",
+      app: "E-commerce",
+    }
   ];
   return (
     <>

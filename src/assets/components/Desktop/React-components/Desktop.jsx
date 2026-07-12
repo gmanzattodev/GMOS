@@ -12,6 +12,7 @@ import Gerenciador from "../../../page/Gerenciador";
 import Wifi from "./Wifi";
 import { imagens } from "../../Config/WallPeper";
 import Calculadora from "../apps/Calculadora";
+import Dashboard from "../../Store/Dashboard";
 
 export default function Desktop() {
   const [windows, setWindows] = useState([]);
@@ -168,6 +169,9 @@ export default function Desktop() {
                   setMudarDock={setMudarDock}
                 />
               );
+            
+            case "E-commerce":
+              return (<Dashboard />)
 
             default:
               return null;
