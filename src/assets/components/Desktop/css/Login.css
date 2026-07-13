@@ -20,10 +20,10 @@
     overflow: hidden;
 }
 .login .fundoimage{
-    left: 34.3rem;
-    width:425px;
+    left: 37.8rem;
+    width:465px;
     border-radius: 50%;
-    top: 79px;
+    top: 90px;
     position: absolute;
     filter: grayscale(100%);
     transition: filter 1s;

@@ -11,6 +11,8 @@
     border: 1px solid #ffffff48;
     backdrop-filter: blur(8px);
     width: 20%;
+    position: absolute;
+    z-index: 999;
 }
 .info-wifi{
     text-align: center;
